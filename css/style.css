@@ -4,6 +4,11 @@ body {
     padding: 0;
     color: #333;
 }
+.layout {
+    text-align: center; /* Center-aligns the content horizontally */
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 0px;
+  }
 
 .top-banner {
     background-color: #efe5e5; /* Dark grey background */
@@ -131,6 +136,8 @@ video {
 .heading-section {
     padding: 40px 20px;
     text-align: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .heading-section h1 {
@@ -140,8 +147,12 @@ video {
 }
 
 .heading-section p {
-    font-size: 1.2em;
-    color: #333;
+    font-size: 2.3em;
+    color: #030000;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    
 }
 
 .heading-section p a {
@@ -240,7 +251,7 @@ video {
     margin-top: 20px;
 }
 
-.company-logos {
+/*.company-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -260,8 +271,51 @@ video {
 
 .company-logos img:hover {
     transform: scale(1.1);
-    outline: 3px solid red; /* Red outline on hover */
-}
+    outline: 3px solid red; }*/
+
+    .company-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Four columns */
+        gap: -2000px; /* Gap between grid items */
+        justify-items: center; /* Center items horizontally */
+        margin-left: 600px;
+        margin-right: 600px;
+        max-width: 1600px;
+
+    }
+
+.button-large-type1{
+    width: 130px;
+    height: 60px;
+    border-radius: 5px;
+    margin:10px;
+    background-color:rgb(241, 231, 229) ;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0; /* Ensure no padding */
+    background-color: hsl(345, 11%, 86%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+  }
+  .button-large-type1 img{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    
+  }
+  .button-large-type1:hover{
+  transform: translateY(-2px);
+  outline: 3px solid red;
+  background-color: #ffffff;    
+  }  
+  .button-container{
+    margin-left: 50px;
+  }
 
 
 
@@ -475,7 +529,7 @@ video {
 }
 
 .text__content {
-    max-width: 800px; /* Adjust max-width as needed */
+    max-width: 1600px; /* Adjust max-width as needed */
     margin: 0 auto; /* Center align */
     text-align: center; /* Center align text */
 }
